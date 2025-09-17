@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Landing Page</title>
+  <style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #1a2332;
+  color: #6b7293;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg') no-repeat center center/cover;
+  color: zwhite;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #546c7d;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.features {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.box {
+  background: #ecf0f1;
+  padding: 1.5rem;
+  margin: 1rem;
+  flex: 1 1 250px;
+  border-radius: 10px;
+}
+
+.about, .contact {
+  padding: 4rem 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .feature-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">Infotech</h1>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h2>Your Product, Reimagined</h2>
+      <p>Build trust, attract users, and grow your brand with a beautifully simple landing page.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-boxes">
+      <div class="box">
+        <h3>Fast Performance</h3>
+        <p>Optimized to load quickly and smoothly across all devices.</p>
+      </div>
+      <div class="box">
+        <h3>Responsive Design</h3>
+        <p>Looks great on desktops, tablets, and smartphones.</p>
+      </div>
+      <div class="box">
+        <h3>User Friendly</h3>
+        <p>Intuitive layout makes navigation easy for users.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Our Product</h2>
+    <p>Our product helps small businesses grow online by providing a seamless digital experience. We combine great design with powerful features to drive results.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@example.com</p>
+    <p>Phone: +123-456-7890</p>
+    <a href="mailto:info@example.com" class="btn">Send Email</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025Infotech. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
